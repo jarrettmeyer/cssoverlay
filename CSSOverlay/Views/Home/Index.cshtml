@@ -1,0 +1,28 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Overlay Testing</title>
+        @Styles.Render("~/Content/css")
+    </head>
+    <body>
+        <h1>Overlay Testing</h1>
+        
+        <p>
+            This page is all about overlay testing.
+        </p>
+        
+        <p>
+            <a href="#" id="overlay-test">Click me to test!</a>
+        </p>
+
+        @Html.Partial("_Overlay")
+        @Scripts.Render("~/Scripts/js")
+        
+        <script type="text/javascript">
+            var view = new app.HomeIndexView({ message: "Check out this awesome test!" });
+        </script>
+    </body>
+</html>
