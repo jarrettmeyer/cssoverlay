@@ -4,6 +4,8 @@
         window.app = {};
     }
 
+    var duration = 1000;
+
     var defaults = {
         message: "Hello, World!",
         testSelector: "#overlay-test"
@@ -11,9 +13,8 @@
 
     function onOverlayShown() {
         setTimeout(function() {
-            overlay.hide();
-            console.log("Hiding overlay.");
-        }, 5000);
+            overlay.hide();            
+        }, duration);
     }
 
     window.app.HomeIndexView = (function () {
@@ -21,7 +22,8 @@
         function HomeIndexView(opts) {
             this.options = $.extend(defaults, opts);
             this.$test = $(this.options.testSelector);
-            overlay.initialize({ callback: onOverlayShown });
+            overlay.initialize({ onShow: onOverlayShown });
+            duration = opts.duration || 30000;
             this.bindEvents();
         }
 

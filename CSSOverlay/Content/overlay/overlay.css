@@ -26,10 +26,13 @@
     border-radius: 5px;
 }
 
-.overlay-spinner {
-    background-image: url(overlay-spinner.gif)
+.overlay-message {
+    display: inline-block;
 }
 
-.overlay-message {
-    
+.overlay-spinner {
+    background: url(overlay-spinner.gif) no-repeat top left;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
 }
