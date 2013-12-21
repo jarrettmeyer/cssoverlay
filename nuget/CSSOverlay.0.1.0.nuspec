@@ -18,7 +18,6 @@
         <file src="..\CSSOverlay\Content\overlay\overlay-spinner.gif" target="content\Content\overlay\overlay-spinner.gif" />
         <file src="..\CSSOverlay\Content\overlay\overlay.css" target="content\Content\overlay\overlay.css" />
         <file src="..\CSSOverlay\Scripts\overlay\overlay.js" target="content\Scripts\overlay\overlay.js" />
-        <file src="install.ps1" target="tools\install.ps1" />
-        <file src="..\CSSOverlay\Views\Shared\_Overlay.cshtml" target="tools\_Overlay.cshtml" />
+        <file src="..\CSSOverlay\Views\Shared\_Overlay.cshtml" target="content\Views\Shared\_Overlay.cshtml" />
     </files>
 </package>
